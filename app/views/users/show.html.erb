@@ -1,0 +1,11 @@
+<h1>User details</h1>
+
+<body>
+    <ul>
+        <li><%=@user.user_name%></li>
+        <li><%=@user.email%></li>
+    </ul>
+
+    <%=link_to "new user", new_user_path%> |
+    <%=link_to "edit user", edit_user_path(@user)%>
+</body>
